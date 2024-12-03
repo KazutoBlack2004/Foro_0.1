@@ -1,0 +1,115 @@
+{% load static %}
+<style>
+    /* Define los estilos CSS */
+    .form-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: azure;
+        background-size: cover;
+        background-position: center;
+        height: 140vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    .form {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 1000px;
+    }
+
+    .boton {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 40px;
+        width: 250px;
+        line-height: 40px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: none;
+        margin-bottom: 20px;
+        color: #ffffff; /* Cambiar color del texto */
+    }
+
+    .boton-2 {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: none;
+        margin-bottom: 20px;
+        color: #ffffff; /* Cambiar color del texto */
+    }
+
+    .boton-2:hover {
+        background: #1E88E5;
+    }
+
+    /* Estilo para los campos de entrada */
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="password"] {
+        width: 80%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+
+    .form input[type="text"]:focus,
+    .form input[type="email"]:focus,
+    .form input[type="password"]:focus {
+        outline: none;
+        border-color: #1E88E5;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Estilo para el campo de contraseña */
+    .form input[type="password"] {
+        letter-spacing: 1px;
+    }
+
+    @keyframes drop {
+        0% {
+            top: -10px;
+            opacity: 1;
+        }
+        100% {
+            top: 100%;
+            opacity: 0;
+        }
+    }
+</style>
+
+<!-- Contenido principal -->
+<div class="form-container">
+    <form method="post" class="form">
+        <p style="font-size: 40px; color:azure">Register</p>
+        {% csrf_token %}
+        
+        <!-- Renderizar los campos del formulario con estilos personalizados -->
+        {{ form.as_p }}
+
+        <button type="submit" class="boton-2">Register</button>
+    </form>
+</div>
