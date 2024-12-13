@@ -13,7 +13,7 @@ charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 comtypes==1.4.8
-contourpy==1.2.0
+contourpy==1.1.1
 customtkinter==5.2.2
 cycler==0.12.1
 darkdetect==0.8.0
