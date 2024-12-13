@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #1c1c1c;
+
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ff1493;
+    /* Color rosado para los enlaces */
+}
+
+.nav-link:hover {
+    color: #ff66b2;
+    /* Rosado más claro al pasar el ratón */
+}
+
+
+/*esta seccion es para el formulario de logeo */
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff1493, #ff66b2);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn i.material-icons {
+    font-size: 24px;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #ff1493, #ff66b2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/*esta seccion es para el formulario de logeo */
