@@ -9,6 +9,8 @@ pip install --upgrade pip
 
 pip install Django==4.2.17
 
+pip install pywin32
+
 
 # Convert static asset files
 python manage.py collectstatic --no-input
