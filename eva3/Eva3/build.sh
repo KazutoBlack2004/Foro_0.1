@@ -7,6 +7,9 @@ set -o errexit
 
 pip install --upgrade pip
 
+pip install Django
+
+
 # Convert static asset files
 python manage.py collectstatic --no-input
 
