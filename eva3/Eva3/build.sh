@@ -7,7 +7,7 @@ set -o errexit
 
 pip install --upgrade pip
 
-pip install Django
+pip install Django==5.1.1
 
 
 # Convert static asset files
